@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --grey-500: #4d4f62;
+  --grey-400: #6a7178;
+  --white: #fff;
+  --red: #ea5454;
+  --cyan: #44d3d2;
+  --blue: #549ef2;
+  --orange: #fcae4a;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+header {
+  margin: auto;
+  width: 316px;
+  text-align: center;
+  color: var(--grey-500);
+}
+
+.title {
+  font-weight: 200;
+  font-size: 24px;
+}
+.title-bold {
+  font-weight: 600;
+}
+.description {
+  font-weight: 400;
+  font-size: 15px;
+}
+.section-cards {
+  margin: auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.card {
+  background-color: var(--white);
+  width: 314px;
+  height: 250px;
+  padding: 32px;
+  border-radius: 8px;
+  margin-top: 32px;
+  box-shadow: 0 15px 30px -11px #83a6d2;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--grey-500);
+}
+.card-description {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--grey-400);
+}
+.card-icon {
+  margin-top: 32px;
+  display: flex;
+  justify-content: end;
+}
+
+.card:nth-child(1) {
+  border-top: 4px solid var(--cyan);
+}
+.card:nth-child(2) {
+  border-top: 4px solid var(--red);
+}
+.card:nth-child(3) {
+  border-top: 4px solid var(--orange);
+}
+.card:nth-child(4) {
+  border-top: 4px solid var(--blue);
+}
+@media screen and (min-width: 768px) {
+  header{
+    width: 540px;
+  }
+  .title{
+    font-size: 2.25rem;
+  }
+  .section-cards {
+    width: 660px;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 314px);
+    justify-content: space-between;
+  }
+  .card:nth-child(1) {
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+  .card:nth-child(4) {
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-cards {
+    width: 1114px;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .card {
+    width: 350px;
+  }
+  .card:nth-child(1) {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+  }
+
+  .card:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+}
