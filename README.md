@@ -15,8 +15,8 @@ Construido con
 
 Servidor alojado:
 
-- [GitHub Pages]()
-- [Netlify]()
+- [GitHub Pages](https://github.com/amigos81/four-card-feature-section.git)
+- [Netlify](https://whimsical-marshmallow-ee7548.netlify.app)
 
 ## Autor
 
